@@ -21,9 +21,18 @@ microbit.display.show(microbit.Image(current_image))
 
 while True:
     if microbit.button_a.was_pressed():
-        player_x = player_x - 1 # player_x -= 1
+        #moving to left
+        if player_x > 0:
+            player_x = player_x - 1
+        else:
+            player_x = 4
+    
     if microbit.button_b.was_pressed():
-        player_x = player_x + 1
+        #moving to right
+        if player_x < 4:
+            player_x = player_x + 1
+        else:
+            player_x = 0
         
     #Update the Screen of the Micro:bit
     current_image = create_screen(player_x)
