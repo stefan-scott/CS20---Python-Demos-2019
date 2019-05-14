@@ -33,7 +33,7 @@ showing_image = False
 time_to_wait = 0
 starting_time = 0
 ending_time = 0
-choice = 0
+choice = random.randint(0,1)
 
 # constants
 POINTS_TO_WIN_GAME = 5
