@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Demo</title>
+    <!-- the style tags below (but still in the head) is where we should define our CSS -->
+    <style>
+        h1 {
+            color: #832c99;        
+        } 
+        body {
+            background-image: url("tile.png");
+        }
+        p {
+            color: rgb(59, 2, 2);
+            font-family:Arial, Helvetica, sans-serif
+        }
+        p#second{
+            font-size: 14pt;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+        .left{
+            background-color:cornflowerblue;
+        }
+
+        .right{
+            background-color:darkgoldenrod;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <h1>CSS Selector and Properties Demo</h1>
+    <p>This website contains some sample data that we can modify the <i>style</i> of through the use of CSS.</p>
+    <p id = "second">CSS works by specifying a <strong>selector</strong> (the type of tag to style),
+        and a pair →<strong>property:value</strong> (which is how we will style the selected tag) </p>
+    
+    <h2>Now a table with some data in it</h2>
+
+    <table>
+        <caption>Club Participation</caption>
+        <tr>
+            <th class = "left">Club Name</th>
+            <th class = "right"># of Members</th>
+        </tr>
+        <tr>
+            <td class = "right">Robotics</td>
+            <td class = "left">12</td>
+        </tr>
+        <tr>
+            <td class = "left">TOK Movie</td>
+            <td class = "right">7</td>
+        </tr>
+        <tr>
+            <td class = "right">De-stress Knitting</td>
+            <td class = "left">45</td>
+        </tr>
+        <tr>
+            <td class = "left">Art Club</td>
+            <td class = "right">22</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
